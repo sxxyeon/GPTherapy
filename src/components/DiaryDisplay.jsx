@@ -28,7 +28,7 @@ const DiaryDisplay = ({ data, isLoading }) => {
           <LoadingOutlined />
         </>
       )}
-      <ResultTitle>{data.title}</ResultTitle>
+      <ResultTitle>{data?.title}</ResultTitle>
 
       <Divider />
       <CardContainer>
@@ -39,7 +39,7 @@ const DiaryDisplay = ({ data, isLoading }) => {
           />
           요약문
         </CardTitle>
-        <CardContent>{data.summary}</CardContent>
+        <CardContent>{data?.summary}</CardContent>
       </CardContainer>
 
 
@@ -49,7 +49,7 @@ const DiaryDisplay = ({ data, isLoading }) => {
           <HeartTwoTone twoToneColor="#a991ed" style={{ marginRight: "6px" }} />
           회고문
         </CardTitle>
-        <CardContent>{data.emotional_content}</CardContent>
+        <CardContent>{data?.emotional_content}</CardContent>
       </CardContainer>
 
       <Divider />
@@ -58,7 +58,7 @@ const DiaryDisplay = ({ data, isLoading }) => {
           <SmileTwoTone twoToneColor="#a991ed" style={{ marginRight: "6px" }} />
           당신이 느낀 감정
         </CardTitle>
-        <CardContent>{data.emotional_result}</CardContent>
+        <CardContent>{data?.emotional_result}</CardContent>
       </CardContainer>
 
       <Divider />
@@ -70,7 +70,7 @@ const DiaryDisplay = ({ data, isLoading }) => {
           />
           심리 분석
         </CardTitle>
-        <CardContent>{data.analysis}</CardContent>
+        <CardContent>{data?.analysis}</CardContent>
       </CardContainer>
 
       <Divider />
@@ -80,7 +80,7 @@ const DiaryDisplay = ({ data, isLoading }) => {
           GPT 조언
         </CardTitle>
         <CardContent>
-          {data.action_list.map((action, index) => (
+          {data?.action_list.map((action, index) => (
             <ActionListItem key={index}>{action}</ActionListItem>
           ))}
           {/* <ActionListItem>{data.action_list[0]}</ActionListItem>
