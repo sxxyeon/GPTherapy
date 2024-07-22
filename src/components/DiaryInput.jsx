@@ -82,7 +82,6 @@ const InputWrap = styled.div`
   textarea {
     height: 200px;
     max-height: 200px;
-    /* border: 1px solid #a991ed; */
     font-size: 15px;
     box-shadow: 0 1px 10px 4px rgba(0,0,0,0.1);
     border:none;
