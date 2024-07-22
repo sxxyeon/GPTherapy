@@ -63,6 +63,7 @@ const AppConatiner = styled.div`
   max-width: 720px;
   width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 `;
 
 const AppTitle = styled.div`
