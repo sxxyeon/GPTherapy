@@ -41,7 +41,7 @@ function App() {
   return (
     <AppConatiner>
       {contextHolder}
-      <AppTitle>GPTherapy, AI 심리분석</AppTitle>
+      <AppTitle>GPTherapy, <br/> AI 심리분석</AppTitle>
       <DiaryInput
         messageApi={messageApi}
         isLoading={isLoading}
@@ -70,7 +70,7 @@ const AppTitle = styled.div`
   width: 100%;
   font-weight: 400;
   font-size: 35px;
-  padding: 20px 0;
+  padding: 20px 0 40px;
   text-align: center;
   color: #a991ed;
   font-weight: 800;
