@@ -9,25 +9,27 @@ import {
 } from "./CommonStyles";
 
 import {
-  LoadingOutlined,
   CheckCircleTwoTone,
   HeartTwoTone,
   SmileTwoTone,
   MessageTwoTone,
   SoundTwoTone,
 } from "@ant-design/icons";
+import { Spin } from 'antd';
 import styled from "styled-components";
 
+const Loading = styled.div`
+  text-align: center;
+  padding: 40px;
+  margin: 0 auto;
+`
 
 const DiaryDisplay = ({ data, isLoading }) => {
+  if(isLoading) return <Loading><Spin size="large" twoToneColor="#a991ed"/></Loading>
   return (
+    
     <DiaryContainer>
-      {isLoading && (
-        <>
-          불러오는중...
-          <LoadingOutlined />
-        </>
-      )}
+      
       <ResultTitle>{data?.title}</ResultTitle>
 
       <Divider />

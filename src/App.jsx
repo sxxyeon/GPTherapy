@@ -41,7 +41,7 @@ function App() {
   return (
     <AppConatiner>
       {contextHolder}
-      <AppTitle>GPTherapy, <br/> AI 심리분석</AppTitle>
+      <AppTitle>GPTherapy <br/> AI 심리분석</AppTitle>
       <DiaryInput
         messageApi={messageApi}
         isLoading={isLoading}
