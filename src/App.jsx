@@ -5,9 +5,8 @@ import styled from "styled-components";
 import DiaryDisplay from "./components/DiaryDisplay";
 import { message } from "antd";
 import Logo from "/img/logo.png";
-
 const dummyData = JSON.parse(
-  `{ "title": "", "summary": "","emotional_content": "", "emotional_result": "", "analysis": "", "action_list": [] }`
+  `{ "title": "", "summary": "", "emotional_content": " ", "emotional_result": "", "analysis": "", "action_list": [] }`
 );
 
 function App() {

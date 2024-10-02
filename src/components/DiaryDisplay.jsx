@@ -27,7 +27,7 @@ const DiaryDisplay = ({ data, isLoading }) => {
   if (isLoading)
     return (
       <Loading>
-        <Spin size="large" twoToneColor="#937bd9" />
+        <Spin size="large" twoToneColor="#969696" />
       </Loading>
     );
   return (

@@ -57,7 +57,7 @@ const DiaryInput = ({ isLoading, onSubmit, messageApi }) => {
       <TextArea
         value={userInput}
         onChange={handleUserInput}
-        placeholder="오늘 일어난 일들을 간단히 적어주세요."
+        placeholder="오늘 일어난 일들을 2줄 이상 적어주세요."
       />
       <ButtonContainer>
         <Button loading={isLoading} onClick={handleClick}>
