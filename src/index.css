@@ -6,3 +6,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  #root{
+    background: rgb(190,190,190);
+    background: linear-gradient(309deg, rgba(190,190,190,1) 0%, rgba(231,231,231,1) 67%, rgba(255,255,255,1) 100%);
+  }
+
+  *{
+  font-size: 0.96rem;
+  }

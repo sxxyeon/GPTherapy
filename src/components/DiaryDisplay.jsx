@@ -1,7 +1,6 @@
 import {
   DiaryContainer,
   ResultTitle,
-  Divider,
   CardContainer,
   CardTitle,
   CardContent,
@@ -15,28 +14,30 @@ import {
   MessageTwoTone,
   SoundTwoTone,
 } from "@ant-design/icons";
-import { Spin } from 'antd';
+import { Spin } from "antd";
 import styled from "styled-components";
 
 const Loading = styled.div`
   text-align: center;
   padding: 40px;
   margin: 0 auto;
-`
+`;
 
 const DiaryDisplay = ({ data, isLoading }) => {
-  if(isLoading) return <Loading><Spin size="large" twoToneColor="#a991ed"/></Loading>
+  if (isLoading)
+    return (
+      <Loading>
+        <Spin size="large" twoToneColor="#937bd9" />
+      </Loading>
+    );
   return (
-    
     <DiaryContainer>
-      
       <ResultTitle>{data?.title}</ResultTitle>
 
-      <Divider />
       <CardContainer>
         <CardTitle>
           <CheckCircleTwoTone
-            twoToneColor="#a991ed"
+            twoToneColor="#937bd9"
             style={{ marginRight: "6px" }}
           />
           요약문
@@ -44,30 +45,18 @@ const DiaryDisplay = ({ data, isLoading }) => {
         <CardContent>{data?.summary}</CardContent>
       </CardContainer>
 
-
-      <Divider />
       <CardContainer>
         <CardTitle>
-          <HeartTwoTone twoToneColor="#a991ed" style={{ marginRight: "6px" }} />
-          회고문
-        </CardTitle>
-        <CardContent>{data?.emotional_content}</CardContent>
-      </CardContainer>
-
-      <Divider />
-      <CardContainer>
-        <CardTitle>
-          <SmileTwoTone twoToneColor="#a991ed" style={{ marginRight: "6px" }} />
+          <SmileTwoTone twoToneColor="#937bd9" style={{ marginRight: "6px" }} />
           당신이 느낀 감정
         </CardTitle>
         <CardContent>{data?.emotional_result}</CardContent>
       </CardContainer>
 
-      <Divider />
       <CardContainer>
         <CardTitle>
           <MessageTwoTone
-            twoToneColor={"#a991ed"}
+            twoToneColor={"#937bd9"}
             style={{ marginRight: "6px" }}
           />
           심리 분석
@@ -75,10 +64,9 @@ const DiaryDisplay = ({ data, isLoading }) => {
         <CardContent>{data?.analysis}</CardContent>
       </CardContainer>
 
-      <Divider />
       <CardContainer>
         <CardTitle>
-          <SoundTwoTone twoToneColor="#a991ed" style={{ marginRight: "6px" }} />
+          <SoundTwoTone twoToneColor="#937bd9" style={{ marginRight: "6px" }} />
           GPT 조언
         </CardTitle>
         <CardContent>

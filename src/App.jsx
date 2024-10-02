@@ -2,12 +2,12 @@ import { useState } from "react";
 import { CallGPT } from "./api/gpt";
 import DiaryInput from "./components/DiaryInput";
 import styled from "styled-components";
-import logo from "./assets/logo.png";
 import DiaryDisplay from "./components/DiaryDisplay";
 import { message } from "antd";
+import Logo from "/img/logo.png";
 
 const dummyData = JSON.parse(
-  `{ "title": "", "summary": "", "emotional_content": " ", "emotional_result": "", "analysis": "", "action_list": [] }`
+  `{ "title": "", "summary": "","emotional_content": "", "emotional_result": "", "analysis": "", "action_list": [] }`
 );
 
 function App() {
@@ -41,7 +41,9 @@ function App() {
   return (
     <AppConatiner>
       {contextHolder}
-      <AppTitle>GPTherapy <br/> AI 심리분석</AppTitle>
+      <AppTitle>
+        <img src={Logo} alt="logo" />
+      </AppTitle>
       <DiaryInput
         messageApi={messageApi}
         isLoading={isLoading}
@@ -67,11 +69,9 @@ const AppConatiner = styled.div`
 `;
 
 const AppTitle = styled.div`
-  width: 100%;
-  font-weight: 400;
-  font-size: 35px;
-  padding: 20px 0 40px;
-  text-align: center;
-  color: #a991ed;
-  font-weight: 800;
+  width: 250px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
 `;

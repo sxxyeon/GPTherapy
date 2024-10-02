@@ -79,12 +79,12 @@ const DiaryInput = ({ isLoading, onSubmit, messageApi }) => {
 export default DiaryInput;
 
 const InputWrap = styled.div`
+  padding-top: 30px;
   textarea {
     height: 200px;
     max-height: 200px;
-    font-size: 15px;
-    box-shadow: 0 1px 10px 4px rgba(0,0,0,0.1);
-    border:none;
+    box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.1);
+    border: none;
     border-radius: 10px;
   }
 `;
@@ -97,24 +97,23 @@ const ButtonContainer = styled.div`
   gap: 5px;
   button {
     padding: 20px;
-    font-size: 14px;
     box-sizing: border-box;
   }
   button:first-child {
-    background: #a991ed;
+    background: #937bd9;
     color: #fff;
-    border: 1px solid #a991ed;
-    &:hover{
+    border: 1px solid #937bd9;
+    &:hover {
       background: #fff;
-      border:1px solid #a991ed !important;
-      color:#a991ed !important;
+      border: 1px solid #937bd9 !important;
+      color: #937bd9 !important;
     }
   }
   button:nth-child(2) {
     box-sizing: border-box;
-    &:hover{
-      border:1px solid #a991ed !important;
-      color:#a991ed !important;
+    &:hover {
+      border: 1px solid #937bd9 !important;
+      color: #937bd9 !important;
     }
   }
 `;
